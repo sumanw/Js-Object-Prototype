@@ -1,5 +1,6 @@
 // Import stylesheets
 import './style.css';
+import { Books } from './Books.js';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
@@ -58,10 +59,11 @@ var joe = new Customer('Joe');
 var rg = new Employee('Red Green', 'Handyman');
 var mike = new Customer('Mike');
 var mime = new Mime('Mime');
+var SM=new Books('The Gopi Diaries: Coming Home','Sudha Murthy');
 var htmlDisplay="hello ";
 htmlDisplay=htmlDisplay + bob.greet() +"<br/>";
 // Hi, I am Bob, the Builder
-htmlDisplay=htmlDisplay + joe.greet() +"<br/>";
+htmlDisplay=htmlDisplay + SM.getDetails() +"<br/>";
 // Hi, I am Joe
 rg.greet();
 // Hi, I am Red Green, the Handyman
